@@ -1,6 +1,6 @@
-import 'package:fix_it_solutions/common/widgets/image_text_widgets/vertical_image_text.dart';
-import 'package:fix_it_solutions/features/shop/screens/sub_category/sub_categories.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
+import 'package:mindmapify/common/widgets/image_text_widgets/vertical_image_text.dart';
+import 'package:mindmapify/features/shop/screens/sub_category/sub_categories.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

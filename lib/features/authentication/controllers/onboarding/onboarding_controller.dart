@@ -1,4 +1,4 @@
-import 'package:fix_it_solutions/features/authentication/screens/login/login.dart';
+import 'package:mindmapify/features/authentication/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,18 +1,18 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class AppCircularImage extends StatelessWidget {
   const AppCircularImage({
-    super.key, 
-    this.fit = BoxFit.cover, 
-    required this.image, 
-    this.isNetworkImage = false, 
-    this.overlayColor, 
-    this.backgroundColor, 
-    this.width = 56, 
-    this.height = 56, 
+    super.key,
+    this.fit = BoxFit.cover,
+    required this.image,
+    this.isNetworkImage = false,
+    this.overlayColor,
+    this.backgroundColor,
+    this.width = 56,
+    this.height = 56,
     this.padding = AppSizes.sm,
   });
 
@@ -30,15 +30,18 @@ class AppCircularImage extends StatelessWidget {
       height: height,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        color: backgroundColor ?? (AppHelperFunctions.isDarkMode(context)
-            ? AppColors.black
-            : AppColors.white),
+        color: backgroundColor ??
+            (AppHelperFunctions.isDarkMode(context)
+                ? AppColors.black
+                : AppColors.white),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Center(
         child: Image(
           fit: fit,
-          image: isNetworkImage ? NetworkImage(image) : AssetImage(image) as ImageProvider,
+          image: isNetworkImage
+              ? NetworkImage(image)
+              : AssetImage(image) as ImageProvider,
           color: overlayColor,
         ),
       ),

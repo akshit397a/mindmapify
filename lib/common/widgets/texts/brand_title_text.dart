@@ -1,4 +1,4 @@
-import 'package:fix_it_solutions/utils/constants/enum.dart';
+import 'package:mindmapify/utils/constants/enum.dart';
 import 'package:flutter/material.dart';
 
 class AppBrandTitleText extends StatelessWidget {

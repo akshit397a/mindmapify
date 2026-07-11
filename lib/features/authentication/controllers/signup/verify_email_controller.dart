@@ -1,5 +1,5 @@
-import 'package:fix_it_solutions/data/repositories/authentication/authentication_repository.dart';
-import 'package:fix_it_solutions/utils/popups/loaders.dart';
+import 'package:mindmapify/data/repositories/authentication/authentication_repository.dart';
+import 'package:mindmapify/utils/popups/loaders.dart';
 import 'package:get/get.dart';
 
 class VerifyEmailController extends GetxController {
@@ -16,7 +16,9 @@ class VerifyEmailController extends GetxController {
   sendEmailVerification() async {
     try {
       await AuthenticationRepository.instance.sendEmailVerification();
-      AppLoaders.successSnackBar(title: 'Email Sent', message: 'Please check your inbox and verify your email.');
+      AppLoaders.successSnackBar(
+          title: 'Email Sent',
+          message: 'Please check your inbox and verify your email.');
     } catch (e) {
       AppLoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());
     }

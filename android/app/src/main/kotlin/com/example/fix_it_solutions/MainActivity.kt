@@ -1,4 +1,4 @@
-package com.example.fix_it_solutions
+package com.example.mindmapify
 
 import io.flutter.embedding.android.FlutterActivity
 

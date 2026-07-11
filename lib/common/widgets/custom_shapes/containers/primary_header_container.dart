@@ -1,11 +1,11 @@
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/circular_container.dart';
-import 'package:fix_it_solutions/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/circular_container.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppPrimaryHeaderContainer extends StatelessWidget {
   const AppPrimaryHeaderContainer({
-    super.key, 
+    super.key,
     required this.child,
   });
 
@@ -17,7 +17,6 @@ class AppPrimaryHeaderContainer extends StatelessWidget {
       child: Container(
           color: AppColors.primary,
           padding: const EdgeInsets.all(0),
-          
           child: Stack(
             children: [
               Positioned(

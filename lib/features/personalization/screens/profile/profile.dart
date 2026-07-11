@@ -1,9 +1,9 @@
-import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-import 'package:fix_it_solutions/common/widgets/images/circular_image.dart';
-import 'package:fix_it_solutions/common/widgets/texts/section_heading.dart';
-import 'package:fix_it_solutions/features/personalization/screens/profile/widgets/profile_menu.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+import 'package:mindmapify/common/widgets/images/circular_image.dart';
+import 'package:mindmapify/common/widgets/texts/section_heading.dart';
+import 'package:mindmapify/features/personalization/screens/profile/widgets/profile_menu.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -46,8 +46,10 @@ class ProfileScreen extends StatelessWidget {
                     title: 'Profile Information', showActionButton: false),
                 const SizedBox(height: AppSizes.spaceBtwItems),
 
-                AppProfileMenu(title: 'Name', value: 'Akshit Agarwal', onPressed: () {}),
-                AppProfileMenu(title: 'Username', value: 'akshit397', onPressed: () {}),
+                AppProfileMenu(
+                    title: 'Name', value: 'Akshit Agarwal', onPressed: () {}),
+                AppProfileMenu(
+                    title: 'Username', value: 'akshit397', onPressed: () {}),
 
                 const SizedBox(height: AppSizes.spaceBtwItems),
                 const Divider(),
@@ -58,22 +60,36 @@ class ProfileScreen extends StatelessWidget {
                     title: 'Personal Information', showActionButton: false),
                 const SizedBox(height: AppSizes.spaceBtwItems),
 
-                AppProfileMenu(title: 'User ID', value: '2300520100106', icon: Iconsax.copy, onPressed: () {}),
-                AppProfileMenu(title: 'E-mail', value: 'a.04agarwal@gmail.com', onPressed: () {}),
-                AppProfileMenu(title: 'Phone Number', value: '+91-9897241287', onPressed: () {}),
-                AppProfileMenu(title: 'Gender', value: 'Male', onPressed: () {}),
-                AppProfileMenu(title: 'Date of Birth', value: '30 Nov 2004', onPressed: () {}),
+                AppProfileMenu(
+                    title: 'User ID',
+                    value: '2300520100106',
+                    icon: Iconsax.copy,
+                    onPressed: () {}),
+                AppProfileMenu(
+                    title: 'E-mail',
+                    value: 'a.04agarwal@gmail.com',
+                    onPressed: () {}),
+                AppProfileMenu(
+                    title: 'Phone Number',
+                    value: '+91-9897241287',
+                    onPressed: () {}),
+                AppProfileMenu(
+                    title: 'Gender', value: 'Male', onPressed: () {}),
+                AppProfileMenu(
+                    title: 'Date of Birth',
+                    value: '30 Nov 2004',
+                    onPressed: () {}),
                 const Divider(),
                 const SizedBox(height: AppSizes.spaceBtwItems),
 
                 Center(
                   child: TextButton(
-                    onPressed: () {}, 
+                    onPressed: () {},
                     child: const Text(
                       'Delete Account',
                       style: TextStyle(color: Colors.red),
                     ),
-                    ),
+                  ),
                 ),
               ],
             )),
@@ -81,4 +97,3 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
-

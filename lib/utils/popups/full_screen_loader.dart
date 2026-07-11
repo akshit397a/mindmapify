@@ -1,6 +1,6 @@
-import 'package:fix_it_solutions/common/widgets/loaders/animation_loader.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/loaders/animation_loader.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

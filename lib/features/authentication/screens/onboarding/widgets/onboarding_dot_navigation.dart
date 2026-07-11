@@ -1,8 +1,8 @@
-import 'package:fix_it_solutions/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/device/device_utility.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/device/device_utility.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

@@ -1,11 +1,11 @@
-import 'package:fix_it_solutions/common/widgets/chips/choice_chip.dart';
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:fix_it_solutions/common/widgets/texts/product_price_text.dart';
-import 'package:fix_it_solutions/common/widgets/texts/product_tile_text.dart';
-import 'package:fix_it_solutions/common/widgets/texts/section_heading.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/chips/choice_chip.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:mindmapify/common/widgets/texts/product_price_text.dart';
+import 'package:mindmapify/common/widgets/texts/product_tile_text.dart';
+import 'package:mindmapify/common/widgets/texts/section_heading.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class AppProductAttributes extends StatelessWidget {
@@ -96,7 +96,7 @@ class AppProductAttributes extends StatelessWidget {
                 AppChoiceChip(
                     text: 'Yellow', selected: false, onSelected: (value) {}),
                 AppChoiceChip(
-                    text: 'Red', selected: false, onSelected: (value) {}),           
+                    text: 'Red', selected: false, onSelected: (value) {}),
               ],
             ),
           ],
@@ -110,15 +110,15 @@ class AppProductAttributes extends StatelessWidget {
               spacing: 8,
               children: [
                 AppChoiceChip(
-                text: 'EU 28', selected: true, onSelected: (value) {}),
+                    text: 'EU 28', selected: true, onSelected: (value) {}),
                 AppChoiceChip(
-                text: 'EU 32', selected: false, onSelected: (value) {}),
+                    text: 'EU 32', selected: false, onSelected: (value) {}),
                 AppChoiceChip(
-                text: 'EU 36', selected: false, onSelected: (value) {}),
+                    text: 'EU 36', selected: false, onSelected: (value) {}),
                 AppChoiceChip(
-                text: 'EU 40', selected: false, onSelected: (value) {}),
+                    text: 'EU 40', selected: false, onSelected: (value) {}),
                 AppChoiceChip(
-                text: 'EU 42', selected: false, onSelected: (value) {}),
+                    text: 'EU 42', selected: false, onSelected: (value) {}),
               ],
             )
           ],

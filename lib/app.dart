@@ -1,7 +1,7 @@
-import 'package:fix_it_solutions/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:fix_it_solutions/utils/theme/theme.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mindmapify/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:mindmapify/utils/theme/theme.dart';
+import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

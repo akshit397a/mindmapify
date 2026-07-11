@@ -1,13 +1,13 @@
-// import 'package:file_picker/file_picker.dart'; 
-// import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/primary_header_container.dart';
-// import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/search_container.dart';
-// import 'package:fix_it_solutions/common/widgets/texts/section_heading.dart';
-// import 'package:fix_it_solutions/features/shop/screens/all_products/all_products.dart';
-// import 'package:fix_it_solutions/features/shop/screens/home/widgets/home_appbar.dart';
-// import 'package:fix_it_solutions/features/shop/screens/home/widgets/promo_slider.dart';
-// import 'package:fix_it_solutions/select_pdf_screen.dart';
-// import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-// import 'package:fix_it_solutions/utils/constants/sizes.dart';
+// import 'package:file_picker/file_picker.dart';
+// import 'package:mindmapify/common/widgets/custom_shapes/containers/primary_header_container.dart';
+// import 'package:mindmapify/common/widgets/custom_shapes/containers/search_container.dart';
+// import 'package:mindmapify/common/widgets/texts/section_heading.dart';
+// import 'package:mindmapify/features/shop/screens/all_products/all_products.dart';
+// import 'package:mindmapify/features/shop/screens/home/widgets/home_appbar.dart';
+// import 'package:mindmapify/features/shop/screens/home/widgets/promo_slider.dart';
+// import 'package:mindmapify/select_pdf_screen.dart';
+// import 'package:mindmapify/utils/constants/image_strings.dart';
+// import 'package:mindmapify/utils/constants/sizes.dart';
 // import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
 
@@ -52,7 +52,7 @@
 //                   // -- SearchBar
 //                   AppSearchContainer(text: 'Search PDF'),
 //                   SizedBox(height: AppSizes.spaceBtwSections),
-                
+
 //                   SizedBox(height: AppSizes.spaceBtwSections),
 //                 ],
 //               ),
@@ -110,16 +110,16 @@
 //   }
 // }
 
-import 'package:file_picker/file_picker.dart'; 
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:fix_it_solutions/common/widgets/texts/section_heading.dart';
-import 'package:fix_it_solutions/features/shop/screens/all_products/all_products.dart';
-import 'package:fix_it_solutions/features/shop/screens/home/widgets/home_appbar.dart';
-import 'package:fix_it_solutions/features/shop/screens/home/widgets/promo_slider.dart';
-import 'package:fix_it_solutions/select_pdf_screen.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:file_picker/file_picker.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:mindmapify/common/widgets/texts/section_heading.dart';
+import 'package:mindmapify/features/shop/screens/all_products/all_products.dart';
+import 'package:mindmapify/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:mindmapify/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:mindmapify/select_pdf_screen.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -160,13 +160,16 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   // -- Appbar
                   MyHomeAppBar(),
-                  SizedBox(height: AppSizes.spaceBtwSections),  // Space after AppBar
+                  SizedBox(
+                      height: AppSizes.spaceBtwSections), // Space after AppBar
 
                   // -- SearchBar
                   AppSearchContainer(text: 'Search PDF'),
-                  SizedBox(height: AppSizes.spaceBtwSections),  // Space after SearchBar
-                
-                  SizedBox(height: AppSizes.spaceBtwSections),  // Extra space
+                  SizedBox(
+                      height:
+                          AppSizes.spaceBtwSections), // Space after SearchBar
+
+                  SizedBox(height: AppSizes.spaceBtwSections), // Extra space
                 ],
               ),
             ),
@@ -188,7 +191,9 @@ class HomeScreen extends StatelessWidget {
                       AppImages.promoBanner5,
                     ],
                   ),
-                  const SizedBox(height: AppSizes.spaceBtwSections), // Space after promo slider
+                  const SizedBox(
+                      height: AppSizes
+                          .spaceBtwSections), // Space after promo slider
 
                   // -- Heading Section
                   AppSectionHeading(
@@ -196,32 +201,39 @@ class HomeScreen extends StatelessWidget {
                     buttonTitle: '',
                     onPressed: () => Get.to(() => const AllProducts()),
                   ),
-                  const SizedBox(height: AppSizes.spaceBtwItems),  // Space after heading
+                  const SizedBox(
+                      height: AppSizes.spaceBtwItems), // Space after heading
 
                   // -- Browse Button to pick PDF file
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwItems),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: AppSizes.spaceBtwItems),
                     child: ElevatedButton(
                       onPressed: () => Get.to(() => const SelectPdfScreen()),
                       style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(double.infinity, 50), // Make button full width
+                        minimumSize: const Size(
+                            double.infinity, 50), // Make button full width
                         backgroundColor: Colors.blueAccent, // Button color
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12), // Rounded corners
+                          borderRadius:
+                              BorderRadius.circular(12), // Rounded corners
                         ),
                         elevation: 5, // Shadow effect for button
                       ),
                       child: const Text(
                         "Upload PDF",
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w600),
                       ),
                     ),
                   ),
 
                   // -- Social Media Links (or any footer content)
-                  const SizedBox(height: AppSizes.spaceBtwItems),  // Space before footer
+                  const SizedBox(
+                      height: AppSizes.spaceBtwItems), // Space before footer
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwItems),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: AppSizes.spaceBtwItems),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -232,7 +244,8 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         IconButton(
-                          icon: const Icon(Iconsax.instagram, color: Colors.blue),
+                          icon:
+                              const Icon(Iconsax.instagram, color: Colors.blue),
                           onPressed: () {
                             // Handle Twitter action
                           },
@@ -243,7 +256,8 @@ class HomeScreen extends StatelessWidget {
 
                   // -- Contact/Help Link
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwItems),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: AppSizes.spaceBtwItems),
                     child: GestureDetector(
                       onTap: () {
                         // Navigate to contact/help page or show modal
@@ -264,7 +278,7 @@ class HomeScreen extends StatelessWidget {
             ),
             // Footer section
             Container(
-              color: Colors.grey[200],  // Footer background color
+              color: Colors.grey[200], // Footer background color
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Column(
                 children: [

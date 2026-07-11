@@ -1,11 +1,11 @@
-import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-import 'package:fix_it_solutions/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
-import 'package:fix_it_solutions/common/widgets/icons/circular_icon.dart';
-import 'package:fix_it_solutions/common/widgets/images/rounded_image.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
+import 'package:mindmapify/common/widgets/icons/circular_icon.dart';
+import 'package:mindmapify/common/widgets/images/rounded_image.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -17,7 +17,7 @@ class AppProductImageSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = AppHelperFunctions.isDarkMode(context);
-    
+
     return AppCurvedEdgeWidget(
       child: Container(
         color: dark ? AppColors.darkerGrey : AppColors.light,

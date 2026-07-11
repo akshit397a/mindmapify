@@ -1,9 +1,9 @@
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:fix_it_solutions/common/widgets/products/ratings/rating_indicator.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:mindmapify/common/widgets/products/ratings/rating_indicator.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
 
@@ -47,13 +47,19 @@ class UserReviewCard extends StatelessWidget {
           trimMode: TrimMode.Line,
           trimExpandedText: ' show less',
           trimCollapsedText: ' show more',
-          moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: AppColors.primary),
-          lessStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: AppColors.primary),
+          moreStyle: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+              color: AppColors.primary),
+          lessStyle: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+              color: AppColors.primary),
         ),
-         const SizedBox(height: AppSizes.spaceBtwItems),
+        const SizedBox(height: AppSizes.spaceBtwItems),
 
-         // Company Review
-         AppRoundedContainer(
+        // Company Review
+        AppRoundedContainer(
           backgroundColor: dark ? AppColors.darkerGrey : AppColors.grey,
           child: Padding(
             padding: const EdgeInsets.all(AppSizes.md),
@@ -62,25 +68,33 @@ class UserReviewCard extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("E - Store", style: Theme.of(context).textTheme.titleMedium),
-                    Text("02 Nov, 2023", style: Theme.of(context).textTheme.bodyMedium),
-                    ],
+                    Text("E - Store",
+                        style: Theme.of(context).textTheme.titleMedium),
+                    Text("02 Nov, 2023",
+                        style: Theme.of(context).textTheme.bodyMedium),
+                  ],
                 ),
                 const SizedBox(height: AppSizes.spaceBtwItems),
-        const ReadMoreText(
-          'The user interface of the app is quite intuitive. I was able to navigate and make purchases seamlessly. Great job!',
-          trimLines: 2,
-          trimMode: TrimMode.Line,
-          trimExpandedText: ' show less',
-          trimCollapsedText: ' show more',
-          moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: AppColors.primary),
-          lessStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: AppColors.primary),
-        ),
+                const ReadMoreText(
+                  'The user interface of the app is quite intuitive. I was able to navigate and make purchases seamlessly. Great job!',
+                  trimLines: 2,
+                  trimMode: TrimMode.Line,
+                  trimExpandedText: ' show less',
+                  trimCollapsedText: ' show more',
+                  moreStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.primary),
+                  lessStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.primary),
+                ),
               ],
             ),
-            ),
-         ),
-         const SizedBox(height: AppSizes.spaceBtwSections),
+          ),
+        ),
+        const SizedBox(height: AppSizes.spaceBtwSections),
       ],
     );
   }

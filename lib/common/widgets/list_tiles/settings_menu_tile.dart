@@ -1,15 +1,15 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppSettingsMenuTile extends StatelessWidget {
   const AppSettingsMenuTile({
-    super.key, 
-    required this.icon, 
-    required this.title, 
-    required this.subtitle, 
-    this.trailing, 
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    this.trailing,
     this.onTap,
-    });
+  });
 
   final IconData icon;
   final String title, subtitle;

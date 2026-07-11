@@ -1,10 +1,12 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/device/device_utility.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/device/device_utility.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
+import 'package:flutter/material.dart';
+
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MyAppBar({
@@ -32,9 +34,8 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon: Icon(
-                  Iconsax.arrow_left, 
-                  color: dark ? AppColors.white : AppColors.dark))
+                icon: Icon(Iconsax.arrow_left,
+                    color: dark ? AppColors.white : AppColors.dark))
             : leadingIcon != null
                 ? IconButton(
                     onPressed: leadingOnPressed, icon: Icon(leadingIcon))

@@ -1,6 +1,6 @@
-import 'package:fix_it_solutions/features/authentication/screens/password_configuration/reset_password.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/constants/text_strings.dart';
+import 'package:mindmapify/features/authentication/screens/password_configuration/reset_password.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -40,12 +40,12 @@ class ForgetPassword extends StatelessWidget {
 
             //Submit Button
             SizedBox(
-              width: double.infinity, 
+              width: double.infinity,
               child: ElevatedButton(
                 onPressed: () => Get.off(() => const ResetPassword()),
                 child: const Text(AppTexts.submit),
-                ),
-                ),
+              ),
+            ),
           ],
         ),
       ),

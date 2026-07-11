@@ -1,8 +1,8 @@
-import 'package:fix_it_solutions/features/authentication/controllers/signup/signup_controller.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/constants/text_strings.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/features/authentication/controllers/signup/signup_controller.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/constants/text_strings.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,17 +14,19 @@ class AppTermsAndConditionCheckbox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = SignupController.instance;
-  final dark = AppHelperFunctions.isDarkMode(context);  
+    final dark = AppHelperFunctions.isDarkMode(context);
     return Row(
       children: [
         SizedBox(
-            width: 24,
-            height: 24,
-            child: Obx(() => Checkbox(
-              value: controller.privacyPolicy.value, 
-              onChanged: (value) => controller.privacyPolicy.value = !controller.privacyPolicy.value),
-              ),
-              ),
+          width: 24,
+          height: 24,
+          child: Obx(
+            () => Checkbox(
+                value: controller.privacyPolicy.value,
+                onChanged: (value) => controller.privacyPolicy.value =
+                    !controller.privacyPolicy.value),
+          ),
+        ),
         const SizedBox(width: AppSizes.spaceBtwItems - 3),
         Text.rich(TextSpan(children: [
           TextSpan(
@@ -35,8 +37,7 @@ class AppTermsAndConditionCheckbox extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyMedium!.apply(
                     color: dark ? AppColors.white : AppColors.primary,
                     decoration: TextDecoration.underline,
-                    decorationColor:
-                        dark ? AppColors.white : AppColors.primary,
+                    decorationColor: dark ? AppColors.white : AppColors.primary,
                   )),
           TextSpan(
               text: '${AppTexts.and} ',
@@ -46,8 +47,7 @@ class AppTermsAndConditionCheckbox extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyMedium!.apply(
                     color: dark ? AppColors.white : AppColors.primary,
                     decoration: TextDecoration.underline,
-                    decorationColor:
-                        dark ? AppColors.white : AppColors.primary,
+                    decorationColor: dark ? AppColors.white : AppColors.primary,
                   )),
         ]))
       ],

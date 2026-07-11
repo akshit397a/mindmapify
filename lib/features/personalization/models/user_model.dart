@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fix_it_solutions/utils/formatters/formatter.dart';
+import 'package:mindmapify/utils/formatters/formatter.dart';
 
 // Model class representing user data.
 class UserModel {
@@ -70,19 +70,18 @@ class UserModel {
   // Factory method to create a UserModel from a Firebase document snapshot.
   factory UserModel.fromSnapshot(
       DocumentSnapshot<Map<String, dynamic>> document) {
-      final data = document.data();
-      if (data == null) {
-    return UserModel.empty();
-  }
-      return UserModel(
-        id: document.id,
-        firstName: data['FirstName'] ?? '',
-        lastName: data['LastName'] ?? '',
-        username: data['UserName'] ?? '',
-        email: data['Email'] ?? '', 
-        phoneNumber: data['PhoneNumber'] ?? '', 
-        profilePicture: data['ProfilePicture'] ?? '',
-        );
+    final data = document.data();
+    if (data == null) {
+      return UserModel.empty();
     }
+    return UserModel(
+      id: document.id,
+      firstName: data['FirstName'] ?? '',
+      lastName: data['LastName'] ?? '',
+      username: data['UserName'] ?? '',
+      email: data['Email'] ?? '',
+      phoneNumber: data['PhoneNumber'] ?? '',
+      profilePicture: data['ProfilePicture'] ?? '',
+    );
   }
-
+}

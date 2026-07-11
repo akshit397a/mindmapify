@@ -1,6 +1,6 @@
-import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-import 'package:fix_it_solutions/features/shop/screens/order/widgets/orders_list.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+import 'package:mindmapify/features/shop/screens/order/widgets/orders_list.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class OrderScreen extends StatelessWidget {
@@ -10,13 +10,16 @@ class OrderScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // -- AppBar
-      appBar: MyAppBar(title: Text('My Orders', style: Theme.of(context).textTheme.headlineSmall),
-      showBackArrow: true,
+      appBar: MyAppBar(
+        title:
+            Text('My Orders', style: Theme.of(context).textTheme.headlineSmall),
+        showBackArrow: true,
       ),
-      body: const Padding(padding: EdgeInsets.all(AppSizes.defaultSpace),
+      body: const Padding(
+        padding: EdgeInsets.all(AppSizes.defaultSpace),
 
-      // -- Orders
-      child: AppOrderListItems(),
+        // -- Orders
+        child: AppOrderListItems(),
       ),
     );
   }

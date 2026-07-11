@@ -1,7 +1,7 @@
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/constants/text_strings.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/constants/text_strings.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class AppLoginHeader extends StatelessWidget {
@@ -17,8 +17,8 @@ class AppLoginHeader extends StatelessWidget {
       children: [
         Image(
           height: 150,
-          image: AssetImage(
-              dark ? AppImages.lightAppLogo : AppImages.darkAppLogo),
+          image:
+              AssetImage(dark ? AppImages.lightAppLogo : AppImages.darkAppLogo),
         ),
         Text(AppTexts.loginTitle,
             style: Theme.of(context).textTheme.headlineMedium),

@@ -1,9 +1,9 @@
-import 'package:fix_it_solutions/common/widgets/success_screen/success_screen.dart';
-import 'package:fix_it_solutions/features/authentication/screens/login/login.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/constants/text_strings.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/success_screen/success_screen.dart';
+import 'package:mindmapify/features/authentication/screens/login/login.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/constants/text_strings.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -34,7 +34,7 @@ class VerifyEmailScreen extends StatelessWidget {
                   width: AppHelperFunctions.screenWidth() * 0.6,
                 ),
                 const SizedBox(height: AppSizes.spaceBtwSections),
-            
+
                 // Title and SubTitle
                 Text(
                   AppTexts.confirmEmail,
@@ -57,24 +57,27 @@ class VerifyEmailScreen extends StatelessWidget {
 
                 // Buttons
                 SizedBox(
-                  width: double.infinity, 
+                  width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () => Get.to(() => SuccessScreen(
-                      image: AppImages.staticSuccessIllustration,
-                      title: AppTexts.yourAccountCreatedTitle,
-                      subTitle: AppTexts.yourAccountCreatedSubTitle,
-                      onPressed: () => Get.to(() => const LoginScreen()),
+                    onPressed: () => Get.to(
+                      () => SuccessScreen(
+                        image: AppImages.staticSuccessIllustration,
+                        title: AppTexts.yourAccountCreatedTitle,
+                        subTitle: AppTexts.yourAccountCreatedSubTitle,
+                        onPressed: () => Get.to(() => const LoginScreen()),
                       ),
-                      ),
-
-                  child: const Text(AppTexts.appContinue),
-                ),),
+                    ),
+                    child: const Text(AppTexts.appContinue),
+                  ),
+                ),
                 const SizedBox(height: AppSizes.spaceBtwItems),
                 SizedBox(
-                  width: double.infinity, 
-                  child: TextButton(onPressed: () {},
-                  child: const Text(AppTexts.resendEmail),
-                ),),
+                  width: double.infinity,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: const Text(AppTexts.resendEmail),
+                  ),
+                ),
               ],
             ),
           ),

@@ -1,13 +1,13 @@
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class AppProfileMenu extends StatelessWidget {
   const AppProfileMenu({
-    super.key, 
-    this.icon = Iconsax.arrow_right_34, 
-    required this.onPressed, 
-    required this.title, 
+    super.key,
+    this.icon = Iconsax.arrow_right_34,
+    required this.onPressed,
+    required this.title,
     required this.value,
   });
 
@@ -20,7 +20,8 @@ class AppProfileMenu extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwItems / 1.5),
+        padding:
+            const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwItems / 1.5),
         child: Row(
           children: [
             Expanded(

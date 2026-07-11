@@ -1,5 +1,5 @@
-import 'package:fix_it_solutions/utils/helpers/network_manager.dart';
 import 'package:get/get.dart';
+import 'package:mindmapify/utils/helpers/network_manager.dart';
 
 class GeneralBindings extends Bindings {
   @override

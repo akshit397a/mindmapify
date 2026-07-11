@@ -1,8 +1,8 @@
-import 'package:fix_it_solutions/features/authentication/screens/password_configuration/forget_password.dart';
-import 'package:fix_it_solutions/features/authentication/screens/signup/signup.dart';
-import 'package:fix_it_solutions/navigation_menu.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/constants/text_strings.dart';
+import 'package:mindmapify/features/authentication/screens/password_configuration/forget_password.dart';
+import 'package:mindmapify/features/authentication/screens/signup/signup.dart';
+import 'package:mindmapify/navigation_menu.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -16,8 +16,8 @@ class AppLoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-            vertical: AppSizes.spaceBtwSections),
+        padding:
+            const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwSections),
         child: Column(
           children: [
             // Email
@@ -27,7 +27,7 @@ class AppLoginForm extends StatelessWidget {
                   labelText: AppTexts.email),
             ),
             const SizedBox(height: AppSizes.spaceBtwInputFields),
-    
+
             // Password
             TextFormField(
               decoration: const InputDecoration(
@@ -37,7 +37,7 @@ class AppLoginForm extends StatelessWidget {
               ),
             ),
             const SizedBox(height: AppSizes.spaceBtwInputFields / 2),
-    
+
             // Remember Me & Forget Password
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -48,7 +48,7 @@ class AppLoginForm extends StatelessWidget {
                     const Text(AppTexts.rememberMe),
                   ],
                 ),
-    
+
                 // Forget Password
                 TextButton(
                     onPressed: () => Get.to(() => const ForgetPassword()),
@@ -56,7 +56,7 @@ class AppLoginForm extends StatelessWidget {
               ],
             ),
             const SizedBox(height: AppSizes.spaceBtwSections),
-    
+
             // Sign In Button
             SizedBox(
                 width: double.infinity,
@@ -64,7 +64,7 @@ class AppLoginForm extends StatelessWidget {
                     onPressed: () => Get.to(() => const NavigationMenu()),
                     child: const Text(AppTexts.signIn))),
             const SizedBox(height: AppSizes.spaceBtwItems),
-    
+
             // Create Account Button
             SizedBox(
                 width: double.infinity,

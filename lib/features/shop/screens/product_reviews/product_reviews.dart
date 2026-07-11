@@ -1,8 +1,8 @@
-import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-import 'package:fix_it_solutions/common/widgets/products/ratings/rating_indicator.dart';
-import 'package:fix_it_solutions/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
-import 'package:fix_it_solutions/features/shop/screens/product_reviews/widgets/user_review_card.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+import 'package:mindmapify/common/widgets/products/ratings/rating_indicator.dart';
+import 'package:mindmapify/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
+import 'package:mindmapify/features/shop/screens/product_reviews/widgets/user_review_card.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class ProductReviewsScreen extends StatelessWidget {

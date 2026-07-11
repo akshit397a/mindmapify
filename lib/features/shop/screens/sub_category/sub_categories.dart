@@ -1,9 +1,9 @@
-import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-import 'package:fix_it_solutions/common/widgets/images/rounded_image.dart';
-import 'package:fix_it_solutions/common/widgets/products/product_cards/product_card_horizontal.dart';
-import 'package:fix_it_solutions/common/widgets/texts/section_heading.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+import 'package:mindmapify/common/widgets/images/rounded_image.dart';
+import 'package:mindmapify/common/widgets/products/product_cards/product_card_horizontal.dart';
+import 'package:mindmapify/common/widgets/texts/section_heading.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class SubCategoriesScreen extends StatelessWidget {
@@ -39,12 +39,15 @@ class SubCategoriesScreen extends StatelessWidget {
                     child: ListView.separated(
                       itemCount: 4,
                       scrollDirection: Axis.horizontal,
-                      separatorBuilder: (context, index) => const SizedBox(width: AppSizes.spaceBtwItems),
-                      itemBuilder: (context, index) => const AppProductCardHorizontal(),
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: AppSizes.spaceBtwItems),
+                      itemBuilder: (context, index) =>
+                          const AppProductCardHorizontal(),
                     ),
                   ),
 
-                  AppSectionHeading(title: 'Sports Equipments', onPressed: () {}),
+                  AppSectionHeading(
+                      title: 'Sports Equipments', onPressed: () {}),
                   const SizedBox(height: AppSizes.spaceBtwItems / 2),
 
                   SizedBox(
@@ -52,8 +55,10 @@ class SubCategoriesScreen extends StatelessWidget {
                     child: ListView.separated(
                       itemCount: 4,
                       scrollDirection: Axis.horizontal,
-                      separatorBuilder: (context, index) => const SizedBox(width: AppSizes.spaceBtwItems),
-                      itemBuilder: (context, index) => const AppProductCardHorizontal(),
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: AppSizes.spaceBtwItems),
+                      itemBuilder: (context, index) =>
+                          const AppProductCardHorizontal(),
                     ),
                   ),
                 ],

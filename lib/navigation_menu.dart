@@ -1,8 +1,8 @@
-import 'package:fix_it_solutions/features/personalization/screens/settings/settings.dart';
-import 'package:fix_it_solutions/features/shop/screens/home/home.dart';
-import 'package:fix_it_solutions/features/shop/screens/store/store.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/features/personalization/screens/settings/settings.dart';
+import 'package:mindmapify/features/shop/screens/home/home.dart';
+import 'package:mindmapify/features/shop/screens/store/store.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -24,11 +24,13 @@ class NavigationMenu extends StatelessWidget {
           onDestinationSelected: (index) =>
               controller.selectedIndex.value = index,
           backgroundColor: darkMode ? AppColors.black : Colors.white,
-          indicatorColor: darkMode ? AppColors.white.withOpacity(0.1) : AppColors.black.withOpacity(0.1),
-          
+          indicatorColor: darkMode
+              ? AppColors.white.withOpacity(0.1)
+              : AppColors.black.withOpacity(0.1),
           destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
-            NavigationDestination(icon: Icon(Iconsax.search_favorite), label: 'Search'),
+            NavigationDestination(
+                icon: Icon(Iconsax.search_favorite), label: 'Search'),
             NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
           ],
         ),

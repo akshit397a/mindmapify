@@ -1,11 +1,11 @@
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:fix_it_solutions/common/widgets/images/circular_image.dart';
-import 'package:fix_it_solutions/common/widgets/texts/brand_title_text_with_verified_icon.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/enum.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:mindmapify/common/widgets/images/circular_image.dart';
+import 'package:mindmapify/common/widgets/texts/brand_title_text_with_verified_icon.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/enum.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class AppBrandCard6 extends StatelessWidget {

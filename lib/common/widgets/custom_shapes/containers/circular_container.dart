@@ -1,4 +1,4 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppCircularContainer extends StatelessWidget {
@@ -9,7 +9,7 @@ class AppCircularContainer extends StatelessWidget {
     this.radius = 400,
     this.padding = 0,
     this.child,
-    this.backgroundColor = AppColors.white, 
+    this.backgroundColor = AppColors.white,
     this.margin,
   });
 

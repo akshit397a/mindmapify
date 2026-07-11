@@ -1,4 +1,4 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppShadowStyles {

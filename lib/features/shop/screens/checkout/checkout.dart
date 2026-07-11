@@ -1,16 +1,16 @@
-import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:fix_it_solutions/common/widgets/products/cart/coupon_widget.dart';
-import 'package:fix_it_solutions/common/widgets/success_screen/success_screen.dart';
-import 'package:fix_it_solutions/features/shop/screens/cart/widgets/cart_items.dart';
-import 'package:fix_it_solutions/features/shop/screens/checkout/widgets/billing_address_section.dart';
-import 'package:fix_it_solutions/features/shop/screens/checkout/widgets/billing_amount_section.dart';
-import 'package:fix_it_solutions/features/shop/screens/checkout/widgets/billing_payment_section.dart';
-import 'package:fix_it_solutions/navigation_menu.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:mindmapify/common/widgets/products/cart/coupon_widget.dart';
+import 'package:mindmapify/common/widgets/success_screen/success_screen.dart';
+import 'package:mindmapify/features/shop/screens/cart/widgets/cart_items.dart';
+import 'package:mindmapify/features/shop/screens/checkout/widgets/billing_address_section.dart';
+import 'package:mindmapify/features/shop/screens/checkout/widgets/billing_amount_section.dart';
+import 'package:mindmapify/features/shop/screens/checkout/widgets/billing_payment_section.dart';
+import 'package:mindmapify/navigation_menu.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -70,13 +70,14 @@ class CheckoutScreen extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(AppSizes.defaultSpace),
         child: ElevatedButton(
-            onPressed: () => Get.to(() => SuccessScreen(
-              image: AppImages.successfulPaymentIcon,
-              title: 'Payment Success!',
-              subTitle: 'Your item will be shipped soon!',
-              onPressed: () => Get.offAll(() => const NavigationMenu()),
+            onPressed: () => Get.to(
+                  () => SuccessScreen(
+                    image: AppImages.successfulPaymentIcon,
+                    title: 'Payment Success!',
+                    subTitle: 'Your item will be shipped soon!',
+                    onPressed: () => Get.offAll(() => const NavigationMenu()),
+                  ),
                 ),
-              ),
             child: const Text('Continue Shopping')),
       ),
     );

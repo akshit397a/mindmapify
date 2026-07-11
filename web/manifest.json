@@ -1,6 +1,6 @@
 {
-    "name": "fix_it_solutions",
-    "short_name": "fix_it_solutions",
+    "name": "mindmapify",
+    "short_name": "mindmapify",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

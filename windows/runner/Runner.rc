@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "fix_it_solutions" "\0"
+            VALUE "FileDescription", "mindmapify" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "fix_it_solutions" "\0"
+            VALUE "InternalName", "mindmapify" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "fix_it_solutions.exe" "\0"
-            VALUE "ProductName", "fix_it_solutions" "\0"
+            VALUE "OriginalFilename", "mindmapify.exe" "\0"
+            VALUE "ProductName", "mindmapify" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

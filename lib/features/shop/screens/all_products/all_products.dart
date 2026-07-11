@@ -1,6 +1,6 @@
-import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-import 'package:fix_it_solutions/common/widgets/products/sortable/sortable_products.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+import 'package:mindmapify/common/widgets/products/sortable/sortable_products.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class AllProducts extends StatelessWidget {
@@ -21,5 +21,3 @@ class AllProducts extends StatelessWidget {
     );
   }
 }
-
-

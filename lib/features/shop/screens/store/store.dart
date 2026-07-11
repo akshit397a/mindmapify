@@ -1,16 +1,16 @@
-// import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-// import 'package:fix_it_solutions/common/widgets/brands/brand_card.dart';
-// import 'package:fix_it_solutions/common/widgets/brands/brand_card1.dart';
-// import 'package:fix_it_solutions/common/widgets/brands/brand_card2.dart';
-// import 'package:fix_it_solutions/common/widgets/brands/brand_card3.dart';
-// import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/search_container.dart';
-// import 'package:fix_it_solutions/common/widgets/layouts/grid_layout.dart';
-// import 'package:fix_it_solutions/common/widgets/texts/section_heading.dart';
-// import 'package:fix_it_solutions/features/shop/screens/brand/all_brands.dart';
-// import 'package:fix_it_solutions/features/shop/screens/store/widgets/category_tab.dart';
-// import 'package:fix_it_solutions/utils/constants/colors.dart';
-// import 'package:fix_it_solutions/utils/constants/sizes.dart';
-// import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+// import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+// import 'package:mindmapify/common/widgets/brands/brand_card.dart';
+// import 'package:mindmapify/common/widgets/brands/brand_card1.dart';
+// import 'package:mindmapify/common/widgets/brands/brand_card2.dart';
+// import 'package:mindmapify/common/widgets/brands/brand_card3.dart';
+// import 'package:mindmapify/common/widgets/custom_shapes/containers/search_container.dart';
+// import 'package:mindmapify/common/widgets/layouts/grid_layout.dart';
+// import 'package:mindmapify/common/widgets/texts/section_heading.dart';
+// import 'package:mindmapify/features/shop/screens/brand/all_brands.dart';
+// import 'package:mindmapify/features/shop/screens/store/widgets/category_tab.dart';
+// import 'package:mindmapify/utils/constants/colors.dart';
+// import 'package:mindmapify/utils/constants/sizes.dart';
+// import 'package:mindmapify/utils/helpers/helper_functions.dart';
 // import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
 
@@ -62,13 +62,13 @@
 
 //                       // -- Brand GRID
 
-                      // AppGridLayout(
-                      //   itemCount: 1,
-                      //   mainAxisExtent: 80,
-                      //   itemBuilder: (_, index) {
-                      //     return const AppBrandCard(showBorder: false);
-                      //   },
-                      // ),
+// AppGridLayout(
+//   itemCount: 1,
+//   mainAxisExtent: 80,
+//   itemBuilder: (_, index) {
+//     return const AppBrandCard(showBorder: false);
+//   },
+// ),
 //                       AppGridLayout(
 //                         itemCount: 1,
 //                         mainAxisExtent: 80,
@@ -105,16 +105,16 @@
 //     );
 //   }
 // }
-import 'package:fix_it_solutions/common/widgets/appbar/appbar.dart';
-import 'package:fix_it_solutions/common/widgets/brands/brand_card.dart';
-import 'package:fix_it_solutions/common/widgets/brands/brand_card1.dart';
-import 'package:fix_it_solutions/common/widgets/brands/brand_card2.dart';
-import 'package:fix_it_solutions/common/widgets/brands/brand_card3.dart';
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:fix_it_solutions/common/widgets/layouts/grid_layout.dart';
-import 'package:fix_it_solutions/common/widgets/texts/section_heading.dart';
-import 'package:fix_it_solutions/features/shop/screens/brand/all_brands.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/widgets/appbar/appbar.dart';
+import 'package:mindmapify/common/widgets/brands/brand_card.dart';
+import 'package:mindmapify/common/widgets/brands/brand_card1.dart';
+import 'package:mindmapify/common/widgets/brands/brand_card2.dart';
+import 'package:mindmapify/common/widgets/brands/brand_card3.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:mindmapify/common/widgets/layouts/grid_layout.dart';
+import 'package:mindmapify/common/widgets/texts/section_heading.dart';
+import 'package:mindmapify/features/shop/screens/brand/all_brands.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -146,7 +146,8 @@ class StoreScreen extends StatelessWidget {
 
           // -- Popular Books Section
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
+            padding:
+                const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
             child: AppSectionHeading(
               title: 'Popular Books',
               onPressed: () => Get.to(() => const AllBrandsScreen()),
@@ -155,41 +156,42 @@ class StoreScreen extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtwItems / 1.5),
 
           AppGridLayout(
-                        itemCount: 1,
-                        mainAxisExtent: 80,
-                        itemBuilder: (_, index) {
-                          return const AppBrandCard(showBorder: false);
-                        },
-                      ),
-                
-          AppGridLayout(
-                        itemCount: 1,
-                        mainAxisExtent: 80,
-                        itemBuilder: (_, index) {
-                          return const AppBrandCard1(showBorder: false);
-                        },
-                      ),
+            itemCount: 1,
+            mainAxisExtent: 80,
+            itemBuilder: (_, index) {
+              return const AppBrandCard(showBorder: false);
+            },
+          ),
 
           AppGridLayout(
-                        itemCount: 1,
-                        mainAxisExtent: 80,
-                        itemBuilder: (_, index) {
-                          return const AppBrandCard2(showBorder: false);
-                        },
-                      ),
+            itemCount: 1,
+            mainAxisExtent: 80,
+            itemBuilder: (_, index) {
+              return const AppBrandCard1(showBorder: false);
+            },
+          ),
 
           AppGridLayout(
-                        itemCount: 1,
-                        mainAxisExtent: 80,
-                        itemBuilder: (_, index) {
-                          return const AppBrandCard3(showBorder: false);
-                        },
-                      ),                  
-          
+            itemCount: 1,
+            mainAxisExtent: 80,
+            itemBuilder: (_, index) {
+              return const AppBrandCard2(showBorder: false);
+            },
+          ),
+
+          AppGridLayout(
+            itemCount: 1,
+            mainAxisExtent: 80,
+            itemBuilder: (_, index) {
+              return const AppBrandCard3(showBorder: false);
+            },
+          ),
+
           // -- Empty Body (Icon in Center)
           const Expanded(
             child: Center(
-              child: Icon(Icons.star, size: 0), // Example icon, replace as needed
+              child:
+                  Icon(Icons.star, size: 0), // Example icon, replace as needed
             ),
           ),
         ],

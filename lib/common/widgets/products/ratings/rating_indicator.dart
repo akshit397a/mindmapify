@@ -1,11 +1,11 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:iconsax/iconsax.dart';
 
 class AppRatingBarIndicator extends StatelessWidget {
   const AppRatingBarIndicator({
-    super.key, 
+    super.key,
     required this.rating,
   });
 

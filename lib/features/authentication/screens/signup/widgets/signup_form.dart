@@ -1,8 +1,8 @@
-import 'package:fix_it_solutions/features/authentication/controllers/signup/signup_controller.dart';
-import 'package:fix_it_solutions/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/constants/text_strings.dart';
-import 'package:fix_it_solutions/utils/validators/validation.dart';
+import 'package:mindmapify/features/authentication/controllers/signup/signup_controller.dart';
+import 'package:mindmapify/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/constants/text_strings.dart';
+import 'package:mindmapify/utils/validators/validation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -25,7 +25,8 @@ class AppSignupForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   controller: controller.firstName,
-                  validator: (value) => AppValidator.validateEmptyText('First name', value),
+                  validator: (value) =>
+                      AppValidator.validateEmptyText('First name', value),
                   expands: false,
                   decoration: const InputDecoration(
                     labelText: AppTexts.firstName,
@@ -37,7 +38,8 @@ class AppSignupForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   controller: controller.lastName,
-                  validator: (value) => AppValidator.validateEmptyText('Last name', value),
+                  validator: (value) =>
+                      AppValidator.validateEmptyText('Last name', value),
                   expands: false,
                   decoration: const InputDecoration(
                     labelText: AppTexts.lastName,
@@ -50,8 +52,9 @@ class AppSignupForm extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtwInputFields),
 
           // Username
-          TextFormField(            
-            validator: (value) => AppValidator.validateEmptyText('Username', value),
+          TextFormField(
+            validator: (value) =>
+                AppValidator.validateEmptyText('Username', value),
             controller: controller.username,
             expands: false,
             decoration: const InputDecoration(
@@ -62,8 +65,8 @@ class AppSignupForm extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtwInputFields),
 
           // Email
-          TextFormField(            
-            validator: (value) => AppValidator.validateEmail(value), 
+          TextFormField(
+            validator: (value) => AppValidator.validateEmail(value),
             controller: controller.email,
             expands: false,
             decoration: const InputDecoration(
@@ -75,7 +78,7 @@ class AppSignupForm extends StatelessWidget {
 
           // Phone Number
           TextFormField(
-            validator: (value) => AppValidator.validatePhoneNumber(value), 
+            validator: (value) => AppValidator.validatePhoneNumber(value),
             controller: controller.phoneNumber,
             expands: false,
             decoration: const InputDecoration(
@@ -88,15 +91,18 @@ class AppSignupForm extends StatelessWidget {
           // Password
           Obx(
             () => TextFormField(
-              validator: (value) => AppValidator.validatePassword(value), 
+              validator: (value) => AppValidator.validatePassword(value),
               controller: controller.password,
               obscureText: controller.hidePassword.value,
               decoration: InputDecoration(
                 labelText: AppTexts.password,
                 prefixIcon: const Icon(Iconsax.password_check),
                 suffixIcon: IconButton(
-                  onPressed: () => controller.hidePassword.value = !controller.hidePassword.value, 
-                  icon: Icon(controller.hidePassword.value ? Iconsax.eye_slash : Iconsax.eye),
+                  onPressed: () => controller.hidePassword.value =
+                      !controller.hidePassword.value,
+                  icon: Icon(controller.hidePassword.value
+                      ? Iconsax.eye_slash
+                      : Iconsax.eye),
                 ),
               ),
             ),

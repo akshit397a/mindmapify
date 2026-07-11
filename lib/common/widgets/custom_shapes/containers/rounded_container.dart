@@ -1,18 +1,18 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class AppRoundedContainer extends StatelessWidget {
   const AppRoundedContainer({
-    super.key, 
-    this.width, 
-    this.height,  
-    this.child, 
-    this.padding, 
+    super.key,
+    this.width,
+    this.height,
+    this.child,
+    this.padding,
     this.margin,
-    this.showBorder = false, 
+    this.showBorder = false,
     this.radius = AppSizes.cardRadiusLg,
-    this.borderColor = AppColors.borderPrimary, 
+    this.borderColor = AppColors.borderPrimary,
     this.backgroundColor = AppColors.white,
   });
 

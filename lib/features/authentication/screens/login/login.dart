@@ -1,9 +1,9 @@
-import 'package:fix_it_solutions/common/styles/spacing_styles.dart';
-import 'package:fix_it_solutions/common/widgets/login_signup/form_divider.dart';
-import 'package:fix_it_solutions/common/widgets/login_signup/social_buttons.dart';
-import 'package:fix_it_solutions/features/authentication/screens/login/widgets/login_form.dart';
-import 'package:fix_it_solutions/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/styles/spacing_styles.dart';
+import 'package:mindmapify/common/widgets/login_signup/form_divider.dart';
+import 'package:mindmapify/common/widgets/login_signup/social_buttons.dart';
+import 'package:mindmapify/features/authentication/screens/login/widgets/login_form.dart';
+import 'package:mindmapify/features/authentication/screens/login/widgets/login_header.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

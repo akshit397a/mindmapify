@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:fix_it_solutions/utils/popups/loaders.dart';
+import 'package:mindmapify/utils/popups/loaders.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
@@ -15,10 +15,11 @@ class NetworkManager extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    _connectivitySubscription =
-        _connectivity.onConnectivityChanged.listen((List<ConnectivityResult> result) {
-          _updateConnectionStatus(result.last); // Use the last connectivity result in the list
-        });
+    _connectivitySubscription = _connectivity.onConnectivityChanged
+        .listen((List<ConnectivityResult> result) {
+      _updateConnectionStatus(
+          result.last); // Use the last connectivity result in the list
+    });
   }
 
   // Update the connection status based on changes in connectivity and show a relevant popup for no internet connection.
@@ -34,13 +35,13 @@ class NetworkManager extends GetxController {
   Future<bool> isConnected() async {
     try {
       final result = await _connectivity.checkConnectivity();
-       // ignore: unrelated_type_equality_checks
-       if (result == ConnectivityResult.none) {
-         return false;
-       } else {
-         return true;
-       }
-     } on PlatformException catch (_) {
+      // ignore: unrelated_type_equality_checks
+      if (result == ConnectivityResult.none) {
+        return false;
+      } else {
+        return true;
+      }
+    } on PlatformException catch (_) {
       return false;
     }
   }
@@ -52,4 +53,3 @@ class NetworkManager extends GetxController {
     super.onClose();
   }
 }
-

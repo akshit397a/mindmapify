@@ -1,6 +1,6 @@
-import 'package:fix_it_solutions/common/widgets/layouts/grid_layout.dart';
-import 'package:fix_it_solutions/common/widgets/products/product_cards/product_card_vertical.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/widgets/layouts/grid_layout.dart';
+import 'package:mindmapify/common/widgets/products/product_cards/product_card_vertical.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -15,8 +15,7 @@ class AppSortableProducts extends StatelessWidget {
       children: [
         // Dropdown
         DropdownButtonFormField(
-          decoration:
-              const InputDecoration(prefixIcon: Icon(Iconsax.sort)),
+          decoration: const InputDecoration(prefixIcon: Icon(Iconsax.sort)),
           onChanged: (value) {},
           items: [
             'Name',
@@ -31,7 +30,7 @@ class AppSortableProducts extends StatelessWidget {
               .toList(),
         ),
         const SizedBox(height: AppSizes.spaceBtwSections),
-    
+
         // Products
         AppGridLayout(
           itemCount: 8,

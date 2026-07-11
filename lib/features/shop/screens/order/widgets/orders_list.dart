@@ -1,7 +1,7 @@
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -13,7 +13,8 @@ class AppOrderListItems extends StatelessWidget {
     return ListView.separated(
       shrinkWrap: true,
       itemCount: 3,
-      separatorBuilder: (_, __) => const SizedBox(height: AppSizes.spaceBtwItems),
+      separatorBuilder: (_, __) =>
+          const SizedBox(height: AppSizes.spaceBtwItems),
       itemBuilder: (_, index) => AppRoundedContainer(
         showBorder: true,
         padding: const EdgeInsets.all(AppSizes.md),

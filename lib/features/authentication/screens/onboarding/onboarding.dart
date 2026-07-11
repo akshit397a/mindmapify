@@ -1,13 +1,12 @@
-import 'package:fix_it_solutions/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:fix_it_solutions/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
-import 'package:fix_it_solutions/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
-import 'package:fix_it_solutions/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:fix_it_solutions/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/text_strings.dart';
+import 'package:mindmapify/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:mindmapify/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:mindmapify/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
+import 'package:mindmapify/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:mindmapify/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});

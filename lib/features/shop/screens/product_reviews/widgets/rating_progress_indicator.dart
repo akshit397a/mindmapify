@@ -1,4 +1,4 @@
-import 'package:fix_it_solutions/features/shop/screens/product_reviews/widgets/progress_indicator_and_rating.dart';
+import 'package:mindmapify/features/shop/screens/product_reviews/widgets/progress_indicator_and_rating.dart';
 import 'package:flutter/material.dart';
 
 class AppOverallProductRating extends StatelessWidget {
@@ -12,8 +12,8 @@ class AppOverallProductRating extends StatelessWidget {
       children: [
         Expanded(
             flex: 3,
-            child: Text('4.8',
-                style: Theme.of(context).textTheme.displayLarge)),
+            child:
+                Text('4.8', style: Theme.of(context).textTheme.displayLarge)),
         const Expanded(
           flex: 7,
           child: Column(

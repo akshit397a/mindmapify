@@ -1,8 +1,8 @@
-import 'package:fix_it_solutions/common/widgets/brands/brand_card.dart';
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/brands/brand_card.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class AppBrandShowcase extends StatelessWidget {
@@ -29,7 +29,9 @@ class AppBrandShowcase extends StatelessWidget {
 
           // Brand Top 3
           Row(
-            children: images.map((image) => brandTopProductImageWidget(image, context)).toList(),
+            children: images
+                .map((image) => brandTopProductImageWidget(image, context))
+                .toList(),
           )
         ],
       ),
@@ -44,9 +46,8 @@ class AppBrandShowcase extends StatelessWidget {
         margin: const EdgeInsets.only(right: AppSizes.sm),
         backgroundColor: AppHelperFunctions.isDarkMode(context)
             ? AppColors.darkerGrey
-            : AppColors.light,        
-        child: Image(
-            fit: BoxFit.contain, image: AssetImage(image)),
+            : AppColors.light,
+        child: Image(fit: BoxFit.contain, image: AssetImage(image)),
       ),
     );
   }

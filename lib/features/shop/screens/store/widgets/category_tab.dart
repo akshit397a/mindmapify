@@ -1,9 +1,9 @@
-import 'package:fix_it_solutions/common/widgets/brands/brand_show_case.dart';
-import 'package:fix_it_solutions/common/widgets/layouts/grid_layout.dart';
-import 'package:fix_it_solutions/common/widgets/products/product_cards/product_card_vertical.dart';
-import 'package:fix_it_solutions/common/widgets/texts/section_heading.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
+import 'package:mindmapify/common/widgets/brands/brand_show_case.dart';
+import 'package:mindmapify/common/widgets/layouts/grid_layout.dart';
+import 'package:mindmapify/common/widgets/products/product_cards/product_card_vertical.dart';
+import 'package:mindmapify/common/widgets/texts/section_heading.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class AppCategoryTab extends StatelessWidget {

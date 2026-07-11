@@ -1,10 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fix_it_solutions/features/authentication/screens/login/login.dart';
-import 'package:fix_it_solutions/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:fix_it_solutions/utils/exceptions/firebase_auth_exceptions.dart';
-import 'package:fix_it_solutions/utils/exceptions/firebase_exceptions.dart';
-import 'package:fix_it_solutions/utils/exceptions/format_exceptions.dart';
-import 'package:fix_it_solutions/utils/exceptions/platform_exceptions.dart';
+import 'package:mindmapify/features/authentication/screens/login/login.dart';
+import 'package:mindmapify/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:mindmapify/utils/exceptions/firebase_auth_exceptions.dart';
+import 'package:mindmapify/utils/exceptions/firebase_exceptions.dart';
+import 'package:mindmapify/utils/exceptions/format_exceptions.dart';
+import 'package:mindmapify/utils/exceptions/platform_exceptions.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';

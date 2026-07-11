@@ -1,11 +1,11 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/device/device_utility.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
 class AppRatingProgressIndicator extends StatelessWidget {
   const AppRatingProgressIndicator({
-    super.key, 
-    required this.text, 
+    super.key,
+    required this.text,
     required this.value,
   });
 

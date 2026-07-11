@@ -1,11 +1,11 @@
-import 'package:fix_it_solutions/data/repositories/authentication/authentication_repository.dart';
-import 'package:fix_it_solutions/data/repositories/user/user_repository.dart';
-import 'package:fix_it_solutions/features/authentication/screens/signup/verify_email.dart';
-import 'package:fix_it_solutions/features/personalization/models/user_model.dart';
-import 'package:fix_it_solutions/utils/constants/image_strings.dart';
-import 'package:fix_it_solutions/utils/helpers/network_manager.dart';
-import 'package:fix_it_solutions/utils/popups/full_screen_loader.dart';
-import 'package:fix_it_solutions/utils/popups/loaders.dart';
+import 'package:mindmapify/data/repositories/authentication/authentication_repository.dart';
+import 'package:mindmapify/data/repositories/user/user_repository.dart';
+import 'package:mindmapify/features/authentication/screens/signup/verify_email.dart';
+import 'package:mindmapify/features/personalization/models/user_model.dart';
+import 'package:mindmapify/utils/constants/image_strings.dart';
+import 'package:mindmapify/utils/helpers/network_manager.dart';
+import 'package:mindmapify/utils/popups/full_screen_loader.dart';
+import 'package:mindmapify/utils/popups/loaders.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

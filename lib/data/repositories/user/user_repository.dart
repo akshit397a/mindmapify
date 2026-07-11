@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fix_it_solutions/features/personalization/models/user_model.dart';
-import 'package:fix_it_solutions/utils/exceptions/firebase_exceptions.dart';
-import 'package:fix_it_solutions/utils/exceptions/format_exceptions.dart';
-import 'package:fix_it_solutions/utils/exceptions/platform_exceptions.dart';
+import 'package:mindmapify/features/personalization/models/user_model.dart';
+import 'package:mindmapify/utils/exceptions/firebase_exceptions.dart';
+import 'package:mindmapify/utils/exceptions/format_exceptions.dart';
+import 'package:mindmapify/utils/exceptions/platform_exceptions.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 

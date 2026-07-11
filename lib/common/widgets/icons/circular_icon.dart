@@ -1,17 +1,17 @@
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/constants/sizes.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/constants/sizes.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class AppCircularIcon extends StatelessWidget {
   const AppCircularIcon({
     super.key,
-    required this.icon, 
-    this.width, 
-    this.height, 
-    this.size = AppSizes.lg, 
-    this.color, 
-    this.backgroundColor, 
+    required this.icon,
+    this.width,
+    this.height,
+    this.size = AppSizes.lg,
+    this.color,
+    this.backgroundColor,
     this.onPressed,
   });
 
@@ -30,11 +30,12 @@ class AppCircularIcon extends StatelessWidget {
         color: backgroundColor != null
             ? backgroundColor!
             : AppHelperFunctions.isDarkMode(context)
-            ? AppColors.black.withOpacity(0.9)
-            : AppColors.white.withOpacity(0.9),
-         borderRadius: BorderRadius.circular(100),
+                ? AppColors.black.withOpacity(0.9)
+                : AppColors.white.withOpacity(0.9),
+        borderRadius: BorderRadius.circular(100),
       ),
-      child: IconButton(onPressed: onPressed, icon: Icon(icon, color: color, size:size)),
+      child: IconButton(
+          onPressed: onPressed, icon: Icon(icon, color: color, size: size)),
     );
   }
 }

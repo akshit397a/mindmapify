@@ -1,6 +1,6 @@
-import 'package:fix_it_solutions/common/widgets/custom_shapes/containers/circular_container.dart';
-import 'package:fix_it_solutions/utils/constants/colors.dart';
-import 'package:fix_it_solutions/utils/helpers/helper_functions.dart';
+import 'package:mindmapify/common/widgets/custom_shapes/containers/circular_container.dart';
+import 'package:mindmapify/utils/constants/colors.dart';
+import 'package:mindmapify/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class AppChoiceChip extends StatelessWidget {
@@ -21,9 +21,7 @@ class AppChoiceChip extends StatelessWidget {
     return Theme(
       data: Theme.of(context).copyWith(canvasColor: Colors.transparent),
       child: ChoiceChip(
-        label: isColor
-            ? const SizedBox()
-            : Text(text),
+        label: isColor ? const SizedBox() : Text(text),
         selected: selected,
         onSelected: onSelected,
         labelStyle: TextStyle(color: selected ? AppColors.white : null),
@@ -33,18 +31,10 @@ class AppChoiceChip extends StatelessWidget {
                 height: 50,
                 backgroundColor: AppHelperFunctions.getColor(text)!)
             : null,
-        labelPadding: isColor
-            ? const EdgeInsets.all(0)
-            : null,
-        padding: isColor
-            ? const EdgeInsets.all(0)
-            : null,
-        shape: isColor
-            ? const CircleBorder()
-            : null,
-        backgroundColor: isColor
-            ? AppHelperFunctions.getColor(text)!
-            : null,
+        labelPadding: isColor ? const EdgeInsets.all(0) : null,
+        padding: isColor ? const EdgeInsets.all(0) : null,
+        shape: isColor ? const CircleBorder() : null,
+        backgroundColor: isColor ? AppHelperFunctions.getColor(text)! : null,
       ),
     );
   }
